@@ -38,7 +38,7 @@ public class Reconcilation_Rule implements Serializable {
 	Boolean isActive;
 	
 
-	@OneToMany(targetEntity=Rule_Condition.class,cascade = {CascadeType.ALL},fetch = FetchType.LAZY)
+	@OneToMany(targetEntity=Rule_Condition.class,cascade = {CascadeType.ALL})
 	List<Rule_Condition> ruleConditions;
 	
 
