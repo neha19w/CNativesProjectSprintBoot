@@ -64,13 +64,8 @@ public class RdaoImp {
 		
 		if(temp.size()>0) {
 			
-			reconcilation_rule1.setId(temp.get(0).getId());
-			reconcilation_rule1.setRuleConditions(temp.get(0).getRuleConditions());
-			int index=0;
-			for(Rule_Condition temp_rules_condition:temp.get(0).getRuleConditions()) {
-				reconcilation_rule1.getRuleConditions().get(index).setId(temp_rules_condition.getId());
-				index++;
-			}
+			reconcilation_rule1=temp.get(0);
+			
 		}
 		
 		boolean status=false;
