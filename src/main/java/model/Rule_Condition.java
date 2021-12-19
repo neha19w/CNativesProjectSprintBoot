@@ -19,7 +19,7 @@ public class Rule_Condition {
 	String field;
 	
 	@Column(name = "Rule_Condition")
-	String condition;
+	String condition;  //resrved name
 	String value;
 	
 	
